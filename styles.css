@@ -1,0 +1,65 @@
+/* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #666666;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Section styles */
+.section {
+    border: 1px solid #000;
+    margin: 20px 10px; 
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+    background-color: #f0f0f0; 
+    width: 31%; 
+    float: left;
+
+}
+
+/* Section title styles */
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #33ff55; 
+    color: white; 
+    padding: 5px 10px;
+}
+/* Media queries for responsive layout */
+@media (max-width: 767px) {
+    /* Mobile view */
+    .section {
+        width: 100%; 
+        float: none; 
+        margin: 20px 0; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Tablet view */
+   
+    #sec-2{
+        width: 62%;
+        float: left;
+    }
+    #sec-3{
+        clear: both;
+        width: 100%;
+
+    }
+
+
+}
